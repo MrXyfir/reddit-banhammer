@@ -3,7 +3,7 @@ const CONFIG = require('./config');
 
 (async function() {
   const r = new snoowrap(CONFIG.SNOOWRAP);
-  r.config({ requestDelay: 1000 });
+  r.config({ requestDelay: 5000 });
 
   const page = await r
     .getSubreddit('UniversalScammerList')
